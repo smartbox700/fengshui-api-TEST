@@ -22,7 +22,7 @@ def test_evaluate_valid():
     assert r.status_code == 200
     body = r.json()
     assert "total" in body and 0 <= body["total"] <= 100
-    assert body["grade"] in ["A", "B", "C", "N/A"]
+    assert body["grade"] in ["A", "B", "C", "D", "N/A"]
 
 def test_evaluate_invalid():
     payload = {"lat": 999, "lon": 999, "features": {}}
