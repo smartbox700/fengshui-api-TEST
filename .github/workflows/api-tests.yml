@@ -34,3 +34,5 @@ jobs:
           BASE_URL: https://fengshui-api.onrender.com
         run: |
           pytest -q
+
+      
